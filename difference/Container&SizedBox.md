@@ -1,2 +1,1 @@
-Container is bigger than SizedBox. 
-Flutter does not explicitly warn you if you use Container a lot, but it does provide helpful tips and best practices for using the widget. For example, Flutter recommends using the smallest Container possible to avoid unnecessary layout calculations. Additionally, Flutter suggests using the same Container size for all
+Container bigger than SizedBox. so, If you use Container a lots, Flutter warn you that Container is used a lot. and suggest to use SizedBox instead of Container.
