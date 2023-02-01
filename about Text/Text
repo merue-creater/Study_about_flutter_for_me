@@ -1,0 +1,3 @@
+Text('안녕', style: TextStyle(color: Colors.black),) //decide Text color that is inputed "Colors.colors"
+child: Text('안녕', style: TextStyle(color: Color(0xffaaaaaa)),) //It is different above code. This code selects a color about 0xff~.
+child: Text('안녕', style: TextStyle(color: Color.fromARGB(r, g, b, opacity)) //Use RGB colors, you can select a color What you want.
