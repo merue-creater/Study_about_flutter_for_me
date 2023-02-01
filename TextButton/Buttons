@@ -1,0 +1,16 @@
+1. child: TextButton(child: Text('text'), onPressed: (){},)
+
+2. child: ElevatedButton(
+            child: Text('글자'),
+            onPressed: (){},),
+
+ 3. child: IconButton(
+            icon: Icon(Icons.star), // It is different above two Buttons which have 'child: Text()'
+            onPressed: (){},
+          ),
+
++ Button desing
+child: ElevatedButton(
+            child: Text('text'),
+            onPressed: (){},style: ButtonStyle(),
+          ),
