@@ -1,0 +1,1 @@
+appBar: AppBar(title: const Text('안녕'),leading: Icon(Icons.star),actions: [Icon(Icons.phone)] //title하고 leading은 appbar의 좌측에 놓이지만 actions는 우측에 놓인다. + title과 leading이 이 코드처럼 있을 경우 아이콘을 배치 한 후 간격을 둬서 title을 배치해준다.
