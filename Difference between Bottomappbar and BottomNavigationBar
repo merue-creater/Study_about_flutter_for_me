@@ -79,5 +79,3 @@ class  MyApp extends StatelessWidget {
   }
 }
 //When I used a Bottomappbar, It can`t make a space between icons automatically.
-//If you are using a BottomAppBar, you can use the flexbox layout to create space between the icons.
-You can set the flex-direction to row and then add a margin to the icons to create the desired space.
