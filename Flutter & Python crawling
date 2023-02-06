@@ -1,0 +1,92 @@
+//import 'dart:ffi';
+
+import 'package:flutter/material.dart';
+
+const List<String> list = <String>['One', 'Two', 'Three', 'Four'];
+
+void main() {
+  runApp(const MyApp()) ;
+}
+
+class  MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+      home: Scaffold(//상중하로 나눠주는 위젯
+        appBar: AppBar(
+          actions:<Widget>[
+            IconButton(
+                icon: const Icon(Icons.zoom_in,color: Colors.black,),
+              onPressed: (){}, iconSize: 40,
+            ),
+            IconButton(
+                icon: const Icon(Icons.menu, color: Colors.black,),
+              onPressed: () {},iconSize: 40,),
+            IconButton(
+              icon: const Icon(Icons.notifications, color: Colors.black,),
+              iconSize: 40,
+              onPressed: () {},)
+          ],
+          backgroundColor: Colors.white,
+          //leading: Icon(Icons.star),//
+        ),//상단에 들어갈 위젯
+
+        body: Column(
+          children: [
+            Container(
+              color: Colors.blueAccent,
+             child: Row(
+                children: [Image.asset('ViichanBear.png',width: 150,),
+                  SizedBox(
+                    width: 300,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('챠니챠니',),
+                        Text('VIichan'),
+                        Text('700'),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Icon(Icons.favorite),
+                            Text('116')
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+            ],
+              ),
+            ),
+
+            Container(
+              height: 250,color: Colors.lightGreenAccent,
+              child: Column(
+                children: [
+                  Text('여기에 url을 넣어주세요.'),
+                  SizedBox(
+                      height: 75,
+                      child: TextField(
+
+                      )
+                  )
+                ],
+              ),
+              )
+                      ]
+        ),
+        //중단
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.green,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.menu), label: "Menu",),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.arrow_back), label: "Back"),
+          ],
+        ),
+        )
+    );
+  }
+}
